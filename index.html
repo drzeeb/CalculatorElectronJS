@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container-fluid d-flex">
+      <div class="row custom-col-padding">
+        <div class="col-12">
+            <input type="text" class="form-control screen" readonly id="screen"/>
+        </div>
+      </div>
+      <div class="row custom-col-padding flex-grow">
+        <div class="col-2">
+            <button type="button" id="btn7" class="btn btn-primary btn-block btn-lg h-100">7</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btn8" class="btn btn-primary btn-block btn-lg h-100">8</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btn9" class="btn btn-primary btn-block btn-lg h-100">9</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnDivide" class="btn btn-info btn-block btn-lg h-100">&divide;</button>
+        </div>
+        <div class="col-4">
+            <button type="button" id="btnC" class="btn btn-danger btn-block btn-lg h-100">C</button>
+        </div>
+      </div>
+      <div class="row custom-col-padding flex-grow">
+        <div class="col-2">
+            <button type="button" id="btn4" class="btn btn-primary btn-block btn-lg h-100">4</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btn5" class="btn btn-primary btn-block btn-lg h-100">5</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btn6" class="btn btn-primary btn-block btn-lg h-100">6</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnTimes" class="btn btn-info btn-block btn-lg h-100">&times;</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnParenthesisOpen" class="btn btn-info btn-block btn-lg h-100">(</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnParenthesisClose" class="btn btn-info btn-block btn-lg h-100">)</button>
+        </div>
+      </div>
+      <div class="row custom-col-padding flex-grow">
+        <div class="col-2">
+            <button type="button" id="btn1" class="btn btn-primary btn-block btn-lg h-100">1</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btn2" class="btn btn-primary btn-block btn-lg h-100">2</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btn3" class="btn btn-primary btn-block btn-lg h-100">3</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnMinus" class="btn btn-info btn-block btn-lg h-100">-</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnSquare" class="btn btn-info btn-block btn-lg h-100">x&sup2;</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnSquareRoot" class="btn btn-info btn-block btn-lg h-100">&radic;</button>
+        </div>
+      </div>
+      <div class="row custom-col-padding flex-grow">
+        <div class="col-2">
+            <button type="button" id="btnZero" class="btn btn-primary btn-block btn-lg h-100">0</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnComma" class="btn btn-info btn-block btn-lg h-100">,</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnPercent" class="btn btn-info btn-block btn-lg h-100">%</button>
+        </div>
+        <div class="col-2">
+            <button type="button" id="btnPlus" class="btn btn-info btn-block btn-lg h-100">+</button>
+        </div>
+        <div class="col-4">
+            <button type="button" id="btnResult" class="btn btn-success btn-block btn-lg h-100">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // You can also require other files to run in this process
+      //require('./renderer.js')
+      require('./functions.js')
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "calculatorejs",
+  "version": "1.0.0",
+  "description": "Small calculator to get into Electronjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drzeeb/CalculatorElectronJS.git"
+  },
+  "keywords": [
+    "calculator",
+    "electronjs"
+  ],
+  "author": "Michael Zeeb (drzeeb)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drzeeb/CalculatorElectronJS/issues"
+  },
+  "homepage": "https://github.com/drzeeb/CalculatorElectronJS#readme",
+  "devDependencies": {
+    "electron": "^3.0.2",
+    "electron-installer-dmg": "^2.0.0",
+    "electron-packager": "^12.1.2",
+    "electron-winstaller": "^2.7.0",
+    "grunt": "^1.0.3"
+  }
+}
