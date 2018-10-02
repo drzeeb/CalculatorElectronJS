@@ -2,6 +2,10 @@
 
 This is a little project to get into ElectronJS
 
+
+![Screenshot](calc.png)
+
+
 ## Installing
 
 Easily clone the repo
@@ -34,10 +38,17 @@ npm start
 * [ElectronJS 3.0.2](https://electronjs.org/) - Framework to build cross platform desktop apps 
 * [Node.js 8.12.0](https://nodejs.org/en/) -  JavaScript runtime
 
+## ToDo
+
+* Implement parentheses
+* Implement x², √, %
+* Implement longer expressions
+* Improve the printed result, so when there is a result with 1,000 remove the ,000
+
 ## Authors
 
-* **Michael Zeeb** - *Initial work* - [drzeeb](https://github.com/drzeeb/)
+* **Michael Zeeb** - *The whole work* - [drzeeb](https://github.com/drzeeb/)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
