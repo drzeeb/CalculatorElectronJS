@@ -45,6 +45,11 @@ npm start
 * Implement longer expressions
 * Improve the printed result, so when there is a result with 1,000 remove the ,000
 
+## Planned features
+
+* History
+* Different themes
+
 ## Authors
 
 * **Michael Zeeb** - *The whole work* - [drzeeb](https://github.com/drzeeb/)
