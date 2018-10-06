@@ -99,7 +99,8 @@ function getResult(screen) {
         result = replaceDotComma(result.toString());
 
         // Print result
-        appendScreen(screen, '=' + result);
+        clearScreen(screen);
+        appendScreen(screen, result);
     } else {
         // When checkInput failed show the user a error message
         screen.value = 'No valid input';
@@ -142,7 +143,5 @@ function calc(method, val1, val2) {
         case '/': result = val1/val2;
         break;
     }
-    // round the result to a precision of 4
-    return result.toPrecision(4);
+    return +result.toPrecision(4);
 }
-

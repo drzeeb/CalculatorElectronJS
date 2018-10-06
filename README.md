@@ -6,6 +6,8 @@ This is a little project to get into ElectronJS
 ![Screenshot](calc.png)
 
 
+![Animation](calc.gif)
+
 ## Installing
 
 Easily clone the repo
@@ -43,7 +45,7 @@ npm start
 * Implement parentheses
 * Implement x², √, %
 * Implement longer expressions
-* Improve the printed result, so when there is a result with 1,000 remove the ,000
+* ~~Improve the printed result, so when there is a result with 1,000 remove the ,000~~ - *done*
 
 ## Planned features
 
