@@ -94,6 +94,12 @@ function getResult(screen) {
             var val1 = parseFloat(input.split('/')[0]);
             var val2 = parseFloat(input.split('/')[1]);
             result = calc("/", val1, val2);
+        } else if(input.indexOf("square") != -1){
+            var val1 = parseFloat(input.split('square')[0]);
+            result = calc("square", val1, 0);
+        } else if(input.indexOf("root") != -1){
+            var val1 = parseFloat(input.split('root')[0]);
+            result = calc("root", val1, 0);
         }
         //Change dot to comma for a intelligible output
         result = replaceDotComma(result.toString());
@@ -108,8 +114,10 @@ function getResult(screen) {
 }
 // Check with regex, if the input is valid example 2+2 or 3.4*0.5
 function checkInput(input) {
+    var squarePattern = new RegExp("[+-]?([0-9]+[.])?[0-9]+(?=square)");
+    var rootPattern = new RegExp("[+-]?([0-9]+[.])?[0-9]+(?=root)");
     var pattern = new RegExp("([0-9]+[\\+\\-\\*\\/]{1}[0-9]+)+([\\+\\-\\*\\/]{1}[0-9]+)*");
-    if(pattern.test(input)) {
+    if(pattern.test(input) || squarePattern.test(input) || rootPattern.test(input)) {
         return true;
     } else {
         return false;
@@ -118,6 +126,8 @@ function checkInput(input) {
 // We need to clean the given input on the screen. Replace , with . to get
 // a float. replace × with * to multiply and replace ÷ with / to divide
 function cleanInput(input) {
+    input = input.replace('²', 'square');
+    input = input.replace('√', 'root');
     input = input.replace('×', '*');
     input = input.replace('÷', '/');
     input = input.replace(/,/g, '.');
@@ -142,6 +152,9 @@ function calc(method, val1, val2) {
         break;
         case '/': result = val1/val2;
         break;
+        case 'square': result = val1*val1;
+        break;
+        case 'root': result = Math.sqrt(val1);
     }
     return +result.toPrecision(4);
 }
