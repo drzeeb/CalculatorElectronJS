@@ -39,12 +39,13 @@ npm start
 * [Bootstrap 4.1.3](http://getbootstrap.com/) - Frontend Framework
 * [ElectronJS 3.0.2](https://electronjs.org/) - Framework to build cross platform desktop apps 
 * [Node.js 8.12.0](https://nodejs.org/en/) -  JavaScript runtime
+* [mathjs 5.2.3](http://mathjs.org/) - Framework to calculate expressions
 
 ## ToDo
 
-* Implement parentheses
-* Implement ~~x², √,~~ % - *x²and √ are done*
-* Implement longer expressions
+* Implement parentheses *done*
+* Implement ~~x², √,~~ % - *x² done*
+* Implement longer expressions *done*
 * ~~Improve the printed result, so when there is a result with 1,000 remove the ,000~~ - *done*
 
 ## Planned features
