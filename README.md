@@ -5,6 +5,7 @@ This is a little project to get into ElectronJS
 
 ![Screenshot](calc.png)
 
+![Screenshot](calc_darkmode.png)
 
 ![Animation](calc.gif)
 
