@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/drzeeb/CalculatorElectronJS#readme",
   "devDependencies": {
-    "electron": "^3.0.2",
+    "electron": "^7.2.4",
     "electron-installer-dmg": "^2.0.0",
     "electron-packager": "^12.1.2",
     "electron-winstaller": "^2.7.0",
