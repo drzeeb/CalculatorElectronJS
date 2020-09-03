@@ -2,6 +2,8 @@
 const math = require('mathjs');
 // Define the screen global
 const screen = document.getElementById('screen');
+// Constant for body
+const body = document.getElementById('body');
 // Add eventlistener for keypress
 document.addEventListener('keydown', pressedKey);
 
@@ -9,11 +11,15 @@ document.addEventListener('keydown', pressedKey);
 var btns = document.querySelectorAll('[data-val]');
 [].forEach.call(btns, (btn)=>{
     var val = btn.getAttribute('data-val');
+    console.log(val);
     if(val == "C") {
         btn.addEventListener('click', function(){clearScreen(screen)},false);
     } else if(val == "result") {
         btn.addEventListener('click', function(){getResult(screen)},false);
-    } else {
+    } else if(val == "themeMode") {
+        btn.addEventListener('click', function(){toggleDarkMode(body)}, false);
+    }
+     else {
         btn.addEventListener('click', function(){appendScreen(screen, val)},false);
     }
 });
@@ -55,8 +61,6 @@ function pressedKey(e) {
         case ')': appendScreen(screen, ')');
         break;
         case ',': appendScreen(screen, ',');
-        break;
-        case '%': appendScreen(screen, '%');
         break;
         case 'Enter': getResult(screen);
         break;
@@ -135,12 +139,21 @@ function replaceDotComma(input) {
 
 // Calculate the standard arithmetic operations
 function calc(input) {
-    var result;
-    try {
-        result = math.eval(input);
-    } catch (err) {
-        //alert(err.message);
-        return 'error';
+    if(input != undefined) {
+        var result;
+        try {
+            result = math.eval(input);
+        } catch (err) {
+            //alert(err.message);
+            return 'error';
+        }
+        return +result.toPrecision(4);
+    } else {
+        return;
     }
-    return +result.toPrecision(4);
+}
+
+function toggleDarkMode(body) {
+    console.log(body);
+    body.classList.toggle('dark');
 }

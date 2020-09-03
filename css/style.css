@@ -1,14 +1,7 @@
 .custom-col-padding > [class*='col-'] {
     padding: 3px;
 }
-.screen {
-    margin-top: 10px;
-    font-size: 45px;
-    height: 80px;
-}
-body {
-    background-color: #0059B6;
-}
+
 
 .d-flex {
     display: flex;

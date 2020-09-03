@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/dark.css"/>
+    <link rel="stylesheet" href="css/light.css"/>
     <title>Calculator</title>
   </head>
-  <body>
-    <div class="container-fluid d-flex">
+  <body id="body">
+    <div class="container-fluid d-flex bg" >
       <div class="row custom-col-padding">
         <div class="col-12">
-            <input type="text" class="form-control screen" readonly id="screen"/>
+            <input type="text" class="screen" readonly id="screen"/>
         </div>
       </div>
       <div class="row custom-col-padding flex-grow">
@@ -79,7 +81,7 @@
             <button type="button" id="btnComma" data-val="," class="btn btn-info btn-block btn-lg h-100">,</button>
         </div>
         <div class="col-2">
-            <button type="button" id="btnPercent" data-val="%" class="btn btn-info btn-block btn-lg h-100">%</button>
+            <button type="button" id="themeMode" data-val="themeMode" class="btn btn-info btn-block btn-lg h-100">&#x25D1;</button>
         </div>
         <div class="col-2">
             <button type="button" id="btnPlus" data-val="+" class="btn btn-info btn-block btn-lg h-100">+</button>
