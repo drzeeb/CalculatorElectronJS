@@ -95,10 +95,36 @@ function getResult(screen) {
 // a float. replace × with * to multiply and replace ÷ with / to divide
 function cleanInput(input) {
     input = input.split('²').join('^2');
-    //input = input.replace('√', 'sqrt(');
+    if(input.indexOf('√')!=-1) {
+        let tempInput = '';
+        let root = false;
+        for(let c of input) {
+            console.log(c);
+            if(c == '√') {
+                root = true;
+                tempInput += 'sqrt(';
+            } else if (root) {
+                if(!isNaN(c) || c == ',') {
+                    tempInput +=c;
+                } else {
+                    tempInput +=')';
+                    tempInput +=c;
+                    root = false;
+                }
+            } else {
+                tempInput += c;
+            }
+            console.log(tempInput);
+        };
+        if(root) {
+            tempInput +=')';
+        }
+        input = tempInput;
+    }
     input = input.split('×').join('*');
     input = input.split('÷').join('/');
     input = input.split(',').join('.');
+    console.log(input);
     return input;
 }
 // Replace for a intelligible output

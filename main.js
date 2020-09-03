@@ -14,7 +14,8 @@ function createWindow () {
   let bounds = electron.screen.getPrimaryDisplay().bounds;
   let x = Math.ceil(bounds.x + ((bounds.width - WINDOW_WIDTH) / 2));
   let y = Math.ceil(bounds.y + ((bounds.height - WINDOW_HEIGHT) / 2));
-  mainWindow = new BrowserWindow({width: WINDOW_WIDTH, height: WINDOW_HEIGHT, x: x, y: y, center: true})
+  mainWindow = new BrowserWindow({width: WINDOW_WIDTH, height: WINDOW_HEIGHT, x: x, y: y, center: true});
+  //mainWindow.webContents.openDevTools();
   mainWindow.setMenu(null);
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')

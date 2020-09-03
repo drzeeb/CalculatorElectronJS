@@ -44,7 +44,7 @@ npm start
 ## ToDo
 
 * ~~Implement parentheses~~ - *done*
-* Implement ~~x²,~~ √, % - *x² done*
+* Implement ~~x², √~~, % - *x² done*
 * ~~Implement longer expressions~~ - *done*
 * ~~Improve the printed result, so when there is a result with 1,000 remove the ,000~~ - *done*
 
