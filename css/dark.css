@@ -5,8 +5,7 @@
 .dark .screen {
     background-color: #4d4d4d;
     color: #ffffff;
-    margin-top: 10px;
-    font-size: 45px;
+    font-size: 10vw !important;
     height: 80px;
     outline: none;
     display: block;
