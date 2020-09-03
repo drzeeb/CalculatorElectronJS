@@ -19,3 +19,7 @@ body {
 .flex-grow {
     flex-grow:1;
 }
+
+button {
+    font-size: 5vw !important;
+}
