@@ -28,6 +28,6 @@
     "grunt": "^1.3.0"
   },
   "dependencies": {
-    "mathjs": "^5.2.3"
+    "mathjs": "^7.5.1"
   }
 }
